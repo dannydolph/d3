@@ -33,7 +33,7 @@ var w = 1200,
 	}
 function makeCall() {
         return $.ajax({
-        url: 'http://www.colourlovers.com/api/colors/random?format=json&jsonCallback=myd&_ich='+Math.random(),
+        url: 'https://www.colourlovers.com/api/colors/random?format=json&jsonCallback=myd&_ich='+Math.random(),
         dataType: 'jsonp',
         jsonpCallback: 'myd',
         success: function(){rest();}
